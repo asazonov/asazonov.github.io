@@ -1,1 +1,219 @@
-Hello World
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://getbootstrap.com/examples/starter-template/ -->
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Aleksejs Sazonovs</title>
+      <!-- Bootstrap core CSS -->
+      <link href="./css/bootstrap.min.css" rel="stylesheet">
+      <script src="./sigma/sigma.core.js"></script>
+      <script src="./sigma/conrad.js"></script>
+      <script src="./sigma/utils/sigma.utils.js"></script>
+      <script src="./sigma/utils/sigma.polyfills.js"></script>
+      <script src="./sigma/sigma.settings.js"></script>
+      <script src="./sigma/classes/sigma.classes.dispatcher.js"></script>
+      <script src="./sigma/classes/sigma.classes.configurable.js"></script>
+      <script src="./sigma/classes/sigma.classes.graph.js"></script>
+      <script src="./sigma/classes/sigma.classes.camera.js"></script>
+      <script src="./sigma/classes/sigma.classes.quad.js"></script>
+      <script src="./sigma/captors/sigma.captors.mouse.js"></script>
+      <script src="./sigma/captors/sigma.captors.touch.js"></script>
+      <script src="./sigma/renderers/sigma.renderers.canvas.js"></script>
+      <script src="./sigma/renderers/sigma.renderers.webgl.js"></script>
+      <script src="./sigma/renderers/sigma.renderers.def.js"></script>
+      <script src="./sigma/renderers/webgl/sigma.webgl.nodes.def.js"></script>
+      <script src="./sigma/renderers/webgl/sigma.webgl.nodes.fast.js"></script>
+      <script src="./sigma/renderers/webgl/sigma.webgl.edges.def.js"></script>
+      <script src="./sigma/renderers/webgl/sigma.webgl.edges.fast.js"></script>
+      <script src="./sigma/renderers/webgl/sigma.webgl.edges.arrow.js"></script>
+      <script src="./sigma/renderers/canvas/sigma.canvas.labels.def.js"></script>
+      <script src="./sigma/renderers/canvas/sigma.canvas.hovers.def.js"></script>
+      <script src="./sigma/renderers/canvas/sigma.canvas.nodes.def.js"></script>
+      <script src="./sigma/renderers/canvas/sigma.canvas.edges.def.js"></script>
+      <script src="./sigma/renderers/canvas/sigma.canvas.edges.arrow.js"></script>
+      <script src="./sigma/renderers/canvas/sigma.canvas.edges.curve.js"></script>
+      <script src="./sigma/middlewares/sigma.middlewares.rescale.js"></script>
+      <script src="./sigma/middlewares/sigma.middlewares.copy.js"></script>
+      <script src="./sigma/misc/sigma.misc.animation.js"></script>
+      <script src="./sigma/misc/sigma.misc.bindEvents.js"></script>
+      <script src="./sigma/misc/sigma.misc.drawHovers.js"></script>
+      <!-- END SIGMA IMPORTS -->
+      <script src="./sigma/sigma.layout.forceAtlas2/sigma.layout.forceAtlas2.js"></script>
+      <!-- Custom styles for this template
+         <link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet"> -->
+      <!-- Just for debugging purposes. Don't actually copy this line! -->
+      <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+      <style type="text/css">
+         body {
+         background-color: #EFEFEF;
+         font-size: 16px;
+         }
+         .top-bar {
+         padding-top: 50px;
+         }
+         h1, h2, h3, h4, h5, p, li{
+         font-family: 'PT Sans', sans-serif;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="row top-bar">
+            <div id="canvas1" class="col-md-3" style="height: 150px; width: 150px; padding-top: 30px;">
+            </div>
+            <div class="col-md-10" style="padding-left: 50px;">
+               <div class="row">
+                  <div class="col-md-10" >
+                     <h1>Aleksejs Sazonovs</h1>
+                     <p class="lead">I am an undergraduate student at the <a href="http://www.st-andrews.ac.uk/">University of St Andrews</a>, graduating in June of 2015 with a B.Sc. Honours in Computer Science.</p>
+                     <p>Get in touch:</p>
+                     <p><a href="mailto:aleksejs.sazonovs@gmail.com">aleksejs.sazonovs@gmail.com</a>  <a style="padding-left:1em" href="https://twitter.com/alehins">@alehins</a></p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-10">
+                     <h3>Interests</h3>
+                     <ul>
+                        <li>Network science</li>
+                        <li>Data visualisation</li>
+                        <li>Parallel computing</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-6">
+                     <h3>Work exeprience</h3>
+                     <ul>
+                        <li>Research intern, Microsoft Research Cambridge</li>
+                        <li>Database and web assistant, CAHRU</li>
+                        <li>Research intern, Karlsruhe Institute of Technology</li>
+                        <li>Research intern, University of St Andrews</li>
+                     </ul>
+                  </div>
+                  <div class="col-md-6">
+                     <h3>Positions of responisbility</h3>
+                     <ul>
+                        <li>School President, School of Computer Science</li>
+                        <li>Treasurer, St Andrews Computing Society</li>
+                     </ul>
+                  </div>
+               </div>
+               <p>A more detailed overview is available <a href="">here</a>.</p>
+               <div class="row">
+                  <div class="col-md-10">
+                     <h3>Publications</h3>
+                     <ul>
+                        <li>C.L. Staudt, <b>A. Sazonovs</b>, H. Meyerhenke:
+                            <i>NetworKit: An Interactive Tool Suite for
+                                High-Performance Network Analysis</i>
+                                - <a href="http://arxiv.org/abs/1403.3005">
+                                    arXiv.org preprint</a>,
+                                    <a href="http://parco.iti.kit.edu/staudt/attachments/talks/Poster-SIAMNetSci14.pdf">
+                                        poster</a> from SIAM NS14.
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- /.container -->
+      <!-- Bootstrap core JavaScript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="./Starter Template for Bootstrap_files/jquery.min.js"></script>
+      <script src="./Starter Template for Bootstrap_files/bootstrap.min.js"></script>
+      <script id="example-content">
+         /**
+         * This example spawns three different renderers, two of them sharing
+         * their camera. Also, a ForceAtlas2 runs on the graph.
+         *
+         * It is basically a mashup between some other examples, to show how
+         * sigma behaves when instanciated in a weird and heavy configuration.
+         */
+
+         var i,
+         s,
+         o,
+         N = 15,
+         E = 70,
+         C = 5,
+         d = 0.5,
+         cs = [],
+         g = {
+             nodes: [],
+             edges: []
+         };
+
+         for (i = 0; i < C; i++)
+         cs.push({
+             id: i,
+             nodes: [],
+             color: '#' + Math.floor(Math.random() * 16777215).toString(16)
+         });
+
+         for (i = 0; i < N; i++) {
+             o = cs[(Math.random() * C) | 0];
+             g.nodes.push({
+                 id: 'n' + i,
+                 //label: 'Node' + i,
+                 x: Math.cos(2 * i * Math.PI / N),
+                 y: Math.sin(2 * i * Math.PI / N),
+                 size: 0.5 + 4.5 * Math.random(),
+                 color: o.color
+             });
+             o.nodes.push('n' + i);
+         }
+
+         for (i = 0; i < E; i++) {
+             if (Math.random() < 1 - d)
+             g.edges.push({
+                 id: 'e' + i,
+                 size: 0.5,
+                 source: 'n' + ((Math.random() * N) | 0),
+                 target: 'n' + ((Math.random() * N) | 0)
+             });
+             else {
+                 o = cs[(Math.random() * C) | 0]
+                 g.edges.push({
+                     id: 'e' + i,
+                     size: 0.5,
+                     source: o.nodes[(Math.random() * o.nodes.length) | 0],
+                     target: o.nodes[(Math.random() * o.nodes.length) | 0]
+                 });
+             }
+         }
+
+         s = new sigma({
+             graph: g,
+             settings: {
+                 skipErrors: true
+             }
+         });
+
+         // Initialize cameras:
+         s.addCamera('cam1'),
+
+
+         s.addRenderer({
+             container: document.getElementById('canvas1'),
+             type: 'webgl',
+             camera: 'cam2'
+         });
+
+         // Start the layout algorithm:
+         s.startForceAtlas2();
+      </script>
+   </body>
+</html>
